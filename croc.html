@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>croc best</title>
+    
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+        }
+        .like {
+            position: fixed;
+            width: 128px;
+            animation-name: like;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes like {
+            from: {
+                width: 128px;
+            }
+            to {
+                width: 0px;
+            }
+        }
+    </style>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    
+    <script>
+        
+        const like = "https://hotemoji.com/images/dl/6/thumbs-up-emoji-by-twitter.png";
+        $(document).ready(() => {
+            setInterval(likeTheCroc, 2000);
+        });
+        function likeTheCroc() {
+            const pos = getPosition();
+            
+            const id = Date.now();
+            
+            $("body").append(`<img src="${like}" class="like like${id}" style="left:${pos.x}px;top:${pos.y}px">`);
+            setTimeout(() => {
+                $(".like" + id).remove();
+            },2250);
+        }
+        
+        function getPosition() {
+            const height = window.innerHeight;
+            const width = window.innerWidth;
+            
+            return {x:Math.floor(Math.random()*width),y:Math.floor(Math.random()*height)};
+        }
+    </script>
+</head>
+<body>
+    <img class="croc" src="https://hotemoji.com/images/dl/l/crocodile-emoji-by-twitter.png" width="128">
+</body>
+</html>
