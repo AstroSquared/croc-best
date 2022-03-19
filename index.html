@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        Website made by CheaterTim
+        Domain by SamMan_
+    -->
     <meta charset="UTF-8">
     <title>croc best</title>
     
@@ -22,7 +26,7 @@
             animation-fill-mode: forwards;
         }
         @keyframes like {
-            from: {
+            from {
                 width: 128px;
             }
             to {
@@ -35,8 +39,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     
     <script>
-        
-        const like = "https://hotemoji.com/images/dl/6/thumbs-up-emoji-by-twitter.png";
         $(document).ready(() => {
             setInterval(likeTheCroc, 2000);
         });
@@ -45,7 +47,7 @@
             
             const id = Date.now();
             
-            $("body").append(`<img src="${like}" class="like like${id}" style="left:${pos.x}px;top:${pos.y}px">`);
+            $("body").append(`<img src="/like.png" class="like like${id}" style="left:${pos.x}px;top:${pos.y}px">`);
             setTimeout(() => {
                 $(".like" + id).remove();
             },2250);
@@ -60,6 +62,6 @@
     </script>
 </head>
 <body>
-    <img class="croc" src="https://hotemoji.com/images/dl/l/crocodile-emoji-by-twitter.png" width="128">
+    <img class="croc" src="/croc.png" width="128">
 </body>
 </html>
