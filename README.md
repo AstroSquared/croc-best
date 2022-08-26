@@ -1,3 +1,9 @@
+## original repo was owned by cheatertim
+
+deployed to github pages: croc.dfplots.net
+
+## ORIGINAL README:
+
 # croc is actually good
 ## why?
 - almost **everyone** loves the croc. so this is a big big ratio.
