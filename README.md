@@ -1,10 +1,4 @@
-## original repo was owned by cheatertim
-
-deployed to github pages: croc.dfplots.net
-
-## ORIGINAL README:
-
-# croc is actually good
+# [croc is actually good](https://croc.dfplots.net/)
 ## why?
 - almost **everyone** loves the croc. so this is a big big ratio.
 - also just look at the croc its soooo lovely :heart_eyes_cat:
@@ -14,3 +8,9 @@ deployed to github pages: croc.dfplots.net
 
 ## TL;DR
 don't hate on croc or attack it with a fricking hammer because of your invalid opinions.
+
+## repo info
+
+this repo was owned (and was deleted later) by @CheaterTim
+
+this is just a fork hosted on croc.dfplots.net
